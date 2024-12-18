@@ -16,5 +16,3 @@ Your points are not included in the array of your class's points. Do not forget 
 function betterThanAverage(classPoints, yourPoints) {
     return yourPoints > classPoints.reduce((sum, num) => sum + num) / classPoints.length; 
 }
-
-module.exports = betterThanAverage;
