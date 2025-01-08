@@ -22,7 +22,7 @@ is_prime(-1)  false
 function isPrime(num) {
     if(num <= 1) return false;
     let factors = 0;
-    for(let i = 3; i <= Math.sqrt(num); i++){
+    for(let i = 2; i <= Math.sqrt(num); i++){
         if(num % i === 0){
             factors++;
             if((num / i) !== i) factors++;
@@ -34,7 +34,7 @@ function isPrime(num) {
 
 // 2nd Approach
 function isPrime(num) {
-    
+
     if(num <= 1) return false;
     if(num === 2) return true;
     if(num % 2 === 0) return false;
